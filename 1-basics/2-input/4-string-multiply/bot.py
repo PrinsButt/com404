@@ -1,13 +1,16 @@
-# Display strings with operators
-print("Please enter number of lives")
-lives = int(input())
+# Ask user for eye character
+print("Please enter an eye character:")
+eye = input()
 
-print("Please enter energy level")
-energy = int(input())
+# Ask user for the length of the glasses
+print("Please enter the length of the glasses:")
+length = int(input())
 
-print("Please enter shield level")
-shield = int(input()) 
+# Display an ascii glasses
+print()
 
-print("Lives:", "♥" * lives)
-print("Energy:", "♦" * energy)
-print("Shield:", "♦" * shield)
+print("#########" + (" " * length)  + "#########")
+print("#   " + eye + "   #" + ("#" * length) + "#   " + eye + "   #")
+print("#########" + (" " * length) + "#########")
+
+print()
